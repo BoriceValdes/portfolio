@@ -104,8 +104,8 @@ section{padding:96px 0}
 .pcard:hover,.pcard:focus-visible{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--accent)}
 .pcard:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .thumb{aspect-ratio:16/10;position:relative;overflow:hidden;border-bottom:1px solid var(--border)}
-.thumb svg{width:100%;height:100%;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
-.pcard:hover .thumb svg{transform:scale(1.045)}
+.thumb img{width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.pcard:hover .thumb img{transform:scale(1.045)}
 .visit{position:absolute;right:14px;bottom:14px;background:rgba(0,0,0,.72);color:#fff;font-size:13px;font-weight:600;padding:7px 12px;border-radius:100px;opacity:0;transform:translateY(6px);transition:.25s}
 .pcard:hover .visit,.pcard:focus-visible .visit{opacity:1;transform:none}
 @media (hover:none){.visit{opacity:1;transform:none}}
@@ -225,35 +225,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 
       <a class="pcard reveal" href="https://projet-react-tv-show.vercel.app/" target="_blank" rel="noopener noreferrer">
         <div class="thumb">
-          <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Aperçu de l'application séries TV">
-            <defs>
-              <linearGradient id="tvbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b0f2e"/><stop offset="1" stop-color="#0a0710"/></linearGradient>
-              <linearGradient id="tvhero" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0a0710"/><stop offset=".6" stop-color="#0a0710" stop-opacity=".2"/><stop offset="1" stop-color="#e2366b" stop-opacity=".5"/></linearGradient>
-              <linearGradient id="p1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f97316"/><stop offset="1" stop-color="#9f1239"/></linearGradient>
-              <linearGradient id="p2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#312e81"/></linearGradient>
-              <linearGradient id="p3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a3e635"/><stop offset="1" stop-color="#14532d"/></linearGradient>
-              <linearGradient id="p4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e879f9"/><stop offset="1" stop-color="#581c87"/></linearGradient>
-            </defs>
-            <rect width="400" height="250" fill="url(#tvbg)"/>
-            <rect x="0" y="0" width="400" height="22" fill="#000" opacity=".45"/>
-            <circle cx="12" cy="11" r="3.5" fill="#ff5f57"/><circle cx="24" cy="11" r="3.5" fill="#febc2e"/><circle cx="36" cy="11" r="3.5" fill="#28c840"/>
-            <rect x="60" y="6" width="200" height="10" rx="5" fill="#fff" opacity=".1"/>
-            <rect x="0" y="22" width="400" height="118" fill="url(#tvhero)"/>
-            <circle cx="330" cy="80" r="70" fill="#e2366b" opacity=".25"/>
-            <circle cx="350" cy="70" r="36" fill="#fb7185" opacity=".35"/>
-            <rect x="22" y="48" width="150" height="16" rx="3" fill="#fff"/>
-            <rect x="22" y="72" width="190" height="6" rx="3" fill="#fff" opacity=".45"/>
-            <rect x="22" y="84" width="160" height="6" rx="3" fill="#fff" opacity=".45"/>
-            <rect x="22" y="102" width="62" height="20" rx="4" fill="#e2366b"/>
-            <polygon points="34,107 34,117 42,112" fill="#fff"/>
-            <rect x="46" y="109" width="30" height="6" rx="3" fill="#fff"/>
-            <rect x="22" y="152" width="80" height="7" rx="3" fill="#fff" opacity=".7"/>
-            <rect x="22" y="168" width="80" height="72" rx="6" fill="url(#p1)"/>
-            <rect x="112" y="168" width="80" height="72" rx="6" fill="url(#p2)"/>
-            <rect x="202" y="168" width="80" height="72" rx="6" fill="url(#p3)"/>
-            <rect x="292" y="168" width="80" height="72" rx="6" fill="url(#p4)"/>
-            <rect x="382" y="168" width="40" height="72" rx="6" fill="#fff" opacity=".12"/>
-          </svg>
+          <img src="images/watiwatch.jpg" alt="Aperçu de WatiWatch, application de séries TV" loading="lazy">
           <span class="visit">Ouvrir le site ↗</span>
         </div>
         <div class="pbody">
@@ -266,40 +238,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 
       <a class="pcard reveal" href="https://angular-pokedex-app-seven.vercel.app/login" target="_blank" rel="noopener noreferrer">
         <div class="thumb">
-          <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Aperçu de l'application Pokédex Angular">
-            <rect width="400" height="250" fill="#fdf2f2"/>
-            <rect x="0" y="0" width="400" height="22" fill="#fff"/>
-            <circle cx="12" cy="11" r="3.5" fill="#ff5f57"/><circle cx="24" cy="11" r="3.5" fill="#febc2e"/><circle cx="36" cy="11" r="3.5" fill="#28c840"/>
-            <rect x="60" y="6" width="200" height="10" rx="5" fill="#000" opacity=".06"/>
-            <rect x="0" y="22" width="400" height="34" fill="#dc2626"/>
-            <rect x="18" y="33" width="80" height="12" rx="3" fill="#fff"/>
-            <rect x="300" y="32" width="82" height="14" rx="7" fill="#fff" opacity=".25"/>
-            <g>
-              <rect x="18" y="70" width="112" height="84" rx="10" fill="#fff" stroke="#fecaca"/>
-              <circle cx="74" cy="104" r="22" fill="#fde68a"/><circle cx="74" cy="104" r="12" fill="#f59e0b"/>
-              <rect x="44" y="134" width="60" height="7" rx="3" fill="#1f2937"/>
-              <rect x="18" y="164" width="112" height="72" rx="10" fill="#fff" stroke="#fecaca"/>
-              <circle cx="74" cy="192" r="18" fill="#bbf7d0"/><circle cx="74" cy="192" r="9" fill="#16a34a"/>
-              <rect x="50" y="218" width="48" height="7" rx="3" fill="#1f2937"/>
-            </g>
-            <g>
-              <rect x="146" y="70" width="112" height="84" rx="10" fill="#fff" stroke="#fecaca"/>
-              <circle cx="202" cy="104" r="22" fill="#bfdbfe"/><circle cx="202" cy="104" r="12" fill="#2563eb"/>
-              <rect x="172" y="134" width="60" height="7" rx="3" fill="#1f2937"/>
-              <rect x="146" y="164" width="112" height="72" rx="10" fill="#fff" stroke="#fecaca"/>
-              <circle cx="202" cy="192" r="18" fill="#fecaca"/><circle cx="202" cy="192" r="9" fill="#dc2626"/>
-              <rect x="178" y="218" width="48" height="7" rx="3" fill="#1f2937"/>
-            </g>
-            <g>
-              <rect x="274" y="70" width="108" height="166" rx="12" fill="#fff" stroke="#dc2626" stroke-width="1.5"/>
-              <rect x="292" y="86" width="72" height="9" rx="3" fill="#1f2937"/>
-              <rect x="292" y="104" width="72" height="18" rx="5" fill="#f3f4f6" stroke="#e5e7eb"/>
-              <rect x="292" y="130" width="72" height="18" rx="5" fill="#f3f4f6" stroke="#e5e7eb"/>
-              <rect x="292" y="160" width="72" height="20" rx="6" fill="#dc2626"/>
-              <rect x="310" y="167" width="36" height="6" rx="3" fill="#fff"/>
-              <rect x="302" y="192" width="52" height="5" rx="2.5" fill="#9ca3af"/>
-            </g>
-          </svg>
+          <img src="images/pokedex.jpg" alt="Aperçu de la page de connexion du Pokédex Angular" loading="lazy">
           <span class="visit">Ouvrir le site ↗</span>
         </div>
         <div class="pbody">
@@ -312,45 +251,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 
       <a class="pcard reveal" href="https://gr-eco.vercel.app/" target="_blank" rel="noopener noreferrer">
         <div class="thumb">
-          <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Aperçu de la marketplace GrEco">
-            <rect width="400" height="250" fill="#f3efe4"/>
-            <rect x="0" y="0" width="400" height="22" fill="#fff"/>
-            <circle cx="12" cy="11" r="3.5" fill="#ff5f57"/><circle cx="24" cy="11" r="3.5" fill="#febc2e"/><circle cx="36" cy="11" r="3.5" fill="#28c840"/>
-            <rect x="60" y="6" width="200" height="10" rx="5" fill="#000" opacity=".06"/>
-            <rect x="0" y="22" width="400" height="30" fill="#1f4f40"/>
-            <path d="M22 44 C22 32 34 28 40 28 C40 38 34 44 22 44 Z" fill="#9be15d"/>
-            <rect x="46" y="32" width="42" height="10" rx="3" fill="#fff"/>
-            <rect x="250" y="33" width="36" height="8" rx="4" fill="#fff" opacity=".5"/>
-            <rect x="296" y="33" width="36" height="8" rx="4" fill="#fff" opacity=".5"/>
-            <rect x="342" y="30" width="42" height="14" rx="7" fill="#9be15d"/>
-            <rect x="0" y="52" width="400" height="80" fill="#1f4f40" opacity=".08"/>
-            <path d="M270 132 C300 60 360 60 400 90 L400 132 Z" fill="#2f7a5f" opacity=".35"/>
-            <path d="M300 132 C330 90 370 92 400 110 L400 132 Z" fill="#1f4f40" opacity=".5"/>
-            <circle cx="350" cy="72" r="14" fill="#f5b83d"/>
-            <rect x="22" y="68" width="170" height="14" rx="3" fill="#1f4f40"/>
-            <rect x="22" y="88" width="130" height="14" rx="3" fill="#1f4f40"/>
-            <rect x="22" y="110" width="70" height="14" rx="7" fill="#e07a3f"/>
-            <g>
-              <rect x="22" y="146" width="84" height="92" rx="10" fill="#fff"/>
-              <rect x="30" y="154" width="68" height="46" rx="6" fill="#fde2c8"/><circle cx="64" cy="177" r="13" fill="#e07a3f"/>
-              <rect x="30" y="208" width="50" height="6" rx="3" fill="#1f2937"/><rect x="30" y="220" width="30" height="6" rx="3" fill="#2f7a5f"/>
-            </g>
-            <g>
-              <rect x="116" y="146" width="84" height="92" rx="10" fill="#fff"/>
-              <rect x="124" y="154" width="68" height="46" rx="6" fill="#dcf2c9"/><path d="M146 186 C146 166 164 160 172 160 C172 176 162 186 146 186Z" fill="#4c9a2a"/>
-              <rect x="124" y="208" width="50" height="6" rx="3" fill="#1f2937"/><rect x="124" y="220" width="30" height="6" rx="3" fill="#2f7a5f"/>
-            </g>
-            <g>
-              <rect x="210" y="146" width="84" height="92" rx="10" fill="#fff"/>
-              <rect x="218" y="154" width="68" height="46" rx="6" fill="#f7e7b0"/><rect x="238" y="166" width="28" height="26" rx="4" fill="#c99a2e"/>
-              <rect x="218" y="208" width="50" height="6" rx="3" fill="#1f2937"/><rect x="218" y="220" width="30" height="6" rx="3" fill="#2f7a5f"/>
-            </g>
-            <g>
-              <rect x="304" y="146" width="84" height="92" rx="10" fill="#fff"/>
-              <rect x="312" y="154" width="68" height="46" rx="6" fill="#e6dcf5"/><circle cx="340" cy="178" r="8" fill="#7c4dbd"/><circle cx="354" cy="178" r="8" fill="#9b6fd8"/><circle cx="347" cy="168" r="8" fill="#6a3fa8"/>
-              <rect x="312" y="208" width="50" height="6" rx="3" fill="#1f2937"/><rect x="312" y="220" width="30" height="6" rx="3" fill="#2f7a5f"/>
-            </g>
-          </svg>
+          <img src="images/greco.jpg" alt="Aperçu de la marketplace GrEco" loading="lazy">
           <span class="visit">Ouvrir le site ↗</span>
         </div>
         <div class="pbody">
